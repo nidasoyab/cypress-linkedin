@@ -1,0 +1,19 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "execTimeout": 60000,
+  "pageLoadTimeout": 900000,
+  "requestTimeout": 50000,
+  "responseTimeout": 40000,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/testdatareports/mocha",
+    "reportFilename": "report",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "charts": false
+  },
+  "video": true,
+  "projectId": "rzq4gn"
+}
