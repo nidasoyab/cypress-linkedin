@@ -11,6 +11,10 @@ describe('test', () => {
     cy.get('.search-global-typeahead__input').trigger('keypress');
     cy.contains('See all results').click({force:true})
     cy.get('a[href*="/in/samueljwsmith?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAFZ_qoB4GxVzr4VaSeT6rkYzBF157oJPIk"] > span > span:nth-of-type(1)').click();
-        // cy.get('.reusable-search_result-container:nth-child(1) .mb1:nth-child(1) .entity-result_title-line:nth-child(1) span:nth-child(1) > span:nth-child(1)').click();
-      });
+    cy.get('.text-body-medium').invoke('text')
+    .then((text) => {
+      const txt = text.trim();
+      expect(text).contains(txt);
+    });  
+  });
 });
