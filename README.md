@@ -1,4 +1,5 @@
 # cypress-linkedin
+check the contactout.png file, so can check the email id of the user
 Check if nodejs is installed or not To install cypress visit url 
 https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install 
 
